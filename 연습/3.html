@@ -3,38 +3,7 @@
 <head>
 <title> WEB1 - stock </title>
 <meta charset="utf-8">
-<script>
-    function LinksSetColor(color){
-        var alist = document.querySelectorAll('a');
-        var i=0;
-        while(i < alist.length){
-            alist[i].style.color= color;
-            i=i+1;
-        }
-    }
-    function BodySetColor(color){
-        document.querySelector('body').style.color = color;
-    }
-    function BodySetBackgoundColor(color){
-        document.querySelector('body').style.background = color;
-    }
-    function nightDayHandler(self){
-        var target = document.querySelector('body')
-        if(self.value === 'night'){
-        BodySetBackgoundColor('black');
-        BodySetColor('white');
-        self.value = 'day';
-        LinksSetColor('powderblue');
-        
-    }
-        else{
-        BodySetBackgoundColor('white');
-        BodySetColor('black');
-        self.value = 'night'
-        LinksSetColor('blue');
-    }
-}
-</script>
+<script src ="colors.js"></script>
     
 </head>
 <body>
